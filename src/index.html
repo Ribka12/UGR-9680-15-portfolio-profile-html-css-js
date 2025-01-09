@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="images/img1.png">
     <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
+   
 </head>
 <body>
 
@@ -15,13 +17,20 @@
              <img src="images/img6.png" alt="logo">
              <nav>
                 <!-- Hamburger Icon -->
-                <div class="hamburger-icon">
+                <div class="hamburger-icon open">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
+                <div class="new">
+                    <div id="homee">Home</div>
+                    <div id="hobbies-interest">Hobbies/Interests</div>
+                    <div id="educations">Education</div>
+                    <div id="skillls">Skills</div>
+                    <div id="acknowledg">Acknowledgment</div>
+                </div>
                 <!-- Navigation Links -->  
-                <ul>
+                <ul class="drop open">
                      <li><a href="index.html">Home</a></li>
                      <li><a href="hobbies.html">Hobbies/Interests</a></li>
                      <li><a href="education.html">Education</a></li>
@@ -29,6 +38,15 @@
                      <li><a href="acknowledgment.html">Acknowledgment</a></li>
                 </ul>
              </nav>
+        </div>
+        <div class="dp">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                     <li><a href="hobbies.html">Hobbies/Interests</a></li>
+                     <li><a href="education.html">Education</a></li>
+                     <li><a href="skills.html">Skills</a></li>
+                     <li><a href="acknowledgment.html">Acknowledgment</a></li>
+            </ul>
         </div>
         <div id="intro">
             <div class="intro">
@@ -72,46 +90,71 @@
             </h2>
         </section>
         <section id="section3">
-            <!--div1; hobbies and interests-->
-            <div class="article1">
+           <div class="section3">
+            <div class="divsions">
+                 <!--div1; hobbies and interests-->
+             <div class="article1">
                 <h2>Hobbies/Interests</h2>
                 <p>...my passions for music, movies, video editing, reading, sport, pursuits that allow me to express creativity and find inspiration in new ways...</p>
-                <a href="hobbies.html">
-                        <span>See More</span>
-                        <i class="fa-solid fa-angles-right"></i>
-                </a>
-            </div>
+                <div class="link">
+                    <a href="hobbies.html">
+                        <div class="links">
+                            <span>See More</span>
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                       
+                    </a>
+                </div>
+             </div>
             
-            <!--div2; Education-->
-            <div class="article2">
+             <!--div2; Education-->
+             <div class="article2">
                 <h2>Education</h2>
                 <p>...my educational path from the school that shaped my early years to the ongoing academic pursuits, leaving me wondering where it will take me next...</p>
-                <a href="education.html"> 
-                    <span>See More</span>
-                    <i class="fa-solid fa-angles-right"></i>
-                    
-                </a>
+                <div class="link">
+                    <a href="education.html"> 
+                        <div class="links">
+                            <span>See More</span>
+                             <i class="fa-solid fa-angles-right"></i>
+                        
+                        </div>
+                    </a>
+                </div>
+               
+             </div>
             </div>
-
-            <!--div3; skills-->
-            <div class="article3">
+            
+            <div class="divsions">
+                <!--div3; skills-->
+             <div class="article3">
                 <h2>Skills</h2>
                 <p>...technical and social abilities i have developed over time through dedication as well as commitment, empowering me to tackle challenges...</p>
-                <a href="skills.html"> 
-                    <span>See More</span>
-                    <i class="fa-solid fa-angles-right"></i>
-                </a>
-            </div>
+                <div class="link">
+                    <a href="skills.html"> 
+                       <div class="links">
+                        <span>See More</span>
+                        <i class="fa-solid fa-angles-right"></i>
+                       </div>
+                    </a>
+                </div>
+             </div>
 
-            <!--div4; acknowledgment-->
-            <div class="article4">
+             <!--div4; acknowledgment-->
+             <div class="article4">
                 <h2>Acknowledgment</h2>
                 <p>...people i want to thank for their support and encouragement, whose contributions and continuous support have made all  this possible ...</p>
-                <a href="acknowledgment.html"> 
-                    <span>See More</span>
-                    <i class="fa-solid fa-angles-right"></i>
-                </a>
+                <div class="link">
+                    <a href="acknowledgment.html"> 
+                        <div class="links">
+                            <span>See More</span>
+                        <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                    </a>
+                </div>
+             </div>
             </div>
+            
+           </div>
 
         </section>
 
@@ -122,14 +165,14 @@
         <div class="footer">
 
              <!--logo-->
-            <div>
+            <div class="lo">
                 <img src="images/img6.png" alt="logo">
             </div>
 
             <!--contact section-->
             <div class="contact">
-                <div><span>Contact me</span></div>
-                <div class="email">
+                <div class="spann"><span>Contact me</span></div>
+                <div class="email contactflow">
                     <img src="images/img7.gif" alt="email.gif">
                     <div class="address">
                         <strong>Email</strong>
@@ -137,7 +180,7 @@
                     </div>
                     
                 </div>
-                <div class="phone">
+                <div class="phone contactflow">
                     <img src="images/img8.gif" alt="phone.gif">
                     <div class="address">
                         <strong>Phone</strong>
@@ -145,7 +188,7 @@
                     </div>
                     
                 </div>
-                <div class="maddress">
+                <div class="addresss contactflow">
                     <img src="images/img9.gif" alt="address.gif">
                     <div class="address">
                         <strong>Address</strong>
@@ -157,18 +200,23 @@
             
             <!--copyright section-->
             <div class="copyrights">
-                <span>My Personal Portfolio Website</span>
+                <div class="per"><span>My Personal Portfolio Website</span></div>
                 <p>Copyright &copy;2024 By <span>Ribka Mengiste</span> | All rights reserved.</p>   
             </div>
             
             <!--social media section-->
             <div class="socialmedias" >
-                <div><p>Social Medias</p></div>
+                <div class="spann"><span>Social Medias</span></div>
                 <div id="icons">
-                    <a href="https://www.linkedin.com/in/ribka-mengiste/" target="_blank"><img src="images/img34.jpg" alt="linkedin-logo"></a>
-                    <a href="https://twitter.com/RMengiste210" target="_blank"><img src="images/img35.png" alt="twitter-logo"></a>
-                    <a href="https://github.com/Ribka12" target="_blank"><img src="images/img36.png" alt="github-logo"></a>
-                    <a href="https://www.snapchat.com/add/ggt6359" target="_blank"><img src="images/img37.jpg" alt="snapchat-logo"></a>
+                    <div class="flexx onef">
+                        <a href="https://www.linkedin.com/in/ribka-mengiste/" target="_blank"><img src="images/img34.jpg" alt="linkedin-logo"></a>
+                        <a href="https://twitter.com/RMengiste210" target="_blank"><img src="images/img35.png" alt="twitter-logo"></a>
+                    </div>
+                    <div class="flexx twof">
+                        <a href="https://github.com/Ribka12" target="_blank"><img src="images/img36.png" alt="github-logo"></a>
+                        <a href="https://www.snapchat.com/add/ggt6359" target="_blank"><img src="images/img37.jpg" alt="snapchat-logo"></a>
+                    </div>
+                  
                 </div>
             </div>        
 
@@ -176,5 +224,6 @@
 
     </footer>
 
+    <script src="js/index.js"></script>
 </body>
 </html>

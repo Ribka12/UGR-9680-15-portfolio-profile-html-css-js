@@ -6,22 +6,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="images/img3.png">
     <title>Education</title>
+    <link rel="stylesheet" href="css/education.css">
 </head>
 <body>
     
     <header>
-        <!--Navigation bar-->
+        <!--Navigation bar and the introduction part-->
         <div id="nav-bar">
              <img src="images/img6.png" alt="logo">
              <nav>
                 <!-- Hamburger Icon -->
-                <div class="hamburger-icon">
+                <div class="hamburger-icon open">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
+                <div class="new">
+                    <div id="homee">Home</div>
+                    <div id="hobbies-interest">Hobbies/Interests</div>
+                    <div id="educations">Education</div>
+                    <div id="skillls">Skills</div>
+                    <div id="acknowledg">Acknowledgment</div>
+                </div>
                 <!-- Navigation Links -->  
-                <ul>
+                <ul class="drop open">
                      <li><a href="index.html">Home</a></li>
                      <li><a href="hobbies.html">Hobbies/Interests</a></li>
                      <li><a href="education.html">Education</a></li>
@@ -30,7 +38,18 @@
                 </ul>
              </nav>
         </div>
+        <div class="dp">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                     <li><a href="hobbies.html">Hobbies/Interests</a></li>
+                     <li><a href="education.html">Education</a></li>
+                     <li><a href="skills.html">Skills</a></li>
+                     <li><a href="acknowledgment.html">Acknowledgment</a></li>
+            </ul>
+        </div>
+       
     </header>
+
 
     <main>
 
@@ -41,7 +60,7 @@
                     <h1>My Educational Journey: <span>High School to University</span></h1>
                     <p>Building Knowledge | Shaping Tomorrow</p>
                 </div>
-                <img src="images/img15.png" alt="my-photo">
+                <div class="img"><img src="images/img15.png" alt="my-photo"></div>
             </div>     
         </section>
 
@@ -54,9 +73,10 @@
 
                     <!--High School-->
                     <div class="content0">
-                        <img src="images/img16.png" alt="Nazareth-School">
-                        <h4>High School: The Foundation of My Academic Journey </h4>
+                        <div class="asides"><img src="images/img16.png" alt="Nazareth-School"></div>
+                        <div class="descr"><h4>High School: The Foundation of My Academic Journey </h4>
                         <p>My academic career was significantly shaped by my high school years. I was concentrating on gaining the discipline, problem-solving abilities, and resilience that would help me throughout my academic career. Along with extracurricular activities, the demanding curriculum taught me the value of tenacity and time management. Here, I developed the ability to strike a balance between my academic obligations and personal development, which was crucial when I entered college.</p>
+                        </div>
                     </div>
 
                     <!--Transition-->
@@ -70,9 +90,10 @@
 
                     <!--Turning Point-->
                     <div class="content0">
-                        <img src="images/img17.webp" alt="study-gif">
-                        <h4> The National Higher Education Exam: A Turning Point </h4>
+                        <div class="asides"><img src="images/img17.webp" alt="study-gif"></div>
+                        <div class="descr"><h4> The National Higher Education Exam: A Turning Point </h4>
                         <p>As we move from high school to university, it was marked by significant changes in the structure and expectations of the National Higher Education Entrance Exam. Once a simple activity, the exam evolved into a rough assessment that assessed not just knowledge but also a capacity for perseverance and performance under stress, and were new challenges for all of us as part of the first Bach to encounter this updated examination system. However I overcame this change with diligence, tenacity, and teamwork, demonstrating fortitude and laying the groundwork for my future academic success.</p>
+                        </div>
                     </div>
 
                     <!--Transition-->
@@ -84,10 +105,11 @@
                     </div>
                     
                     <!--Univerity-->
-                    <div class="content0">
-                        <img src="images/img18.jpg" alt="AAU-img">
-                        <h4>Addis Ababa University and My Path to AAiT</h4>
+                    <div id="lastimg" class="content0">
+                        <div class="asides"><img src="images/img18.jpg" alt="AAU-img"></div>
+                        <div class="descr"><h4>Addis Ababa University and My Path to AAiT</h4>
                         <p>After successfully completing the National Exam, I entered Addis Ababa University, where my academic journey continued to unfold. During my freshman year, I was based at the 4Kilo campus, where I found the academic environment both stimulating and supportive. It was there that I developed a deeper understanding of my interests and aspirations. After carefully evaluating my options, I chose to pursue a degree at AAiT. This decision marked a new chapter in my educational journey, one that allowed me to explore my passion for technology and engineering.</p>
+                        </div>
                     </div>
 
                 </div>
@@ -101,17 +123,16 @@
             <div class="section0">
                 <!--description-->
                 <div class="section1">
-                    <img src="images/img20.jpg" alt="AAiT-img">
+                    <img class="secimg" src="images/img20.jpg" alt="AAiT-img">
                     <div class="text">
-                        <p>
+                        <p class="p1">
                             I am currently in the third year of my Bachelor of Science in Software Engineering at the Addis Ababa Institute of Technology (AAiT), where I am immersing myself in the fundamentals of software development while preparing for the challenges of the ever-changing tech landscape. At AAiT, I am building a robust foundation in programming, web development, and database management—core pillars that are essential to becoming a well-rounded software engineer.
                         </p>
-                        <p>
-                            The dynamic learning environment at AAiT is shaping my critical thinking and problem-solving skills, equipping me with the tools to tackle real-world challenges. As I continue my academic journey, I am committed to refining my craft, pushing my limits, and evolving into a proficient software engineer ready to make impactful contributions in the tech industry.
-                        </p>
+                        
                     </div>      
                 </div>
-                
+
+            
                 <!--table-->
                 <div class="section2">
                     <div class="table">
@@ -154,6 +175,14 @@
                         </table>
                     </div>
                 </div>
+
+               
+            </div>
+             <!--paragraph-->
+             <div id="anotherp">
+                <p class="p2">
+                        The dynamic learning environment at AAiT is shaping my critical thinking and problem-solving skills, equipping me with the tools to tackle real-world challenges. As I continue my academic journey, I am committed to refining my craft, pushing my limits, and evolving into a proficient software engineer ready to make impactful contributions in the tech industry.
+                </p>
             </div>
         </section>
        
@@ -163,8 +192,8 @@
             <div class="certificate">
                 <div class="dropdown-bar">
                     <button class="dropdown-button">
-                        <span>Show Certificates</span>
-                        <i class="fa-solid fa-caret-down"></i>
+                       <span>Show Certificates</span>
+                        <i  class="fa-solid fa-caret-down"></i>
                     </button>
                     <div id="dropdown-list">
                         <ul>
@@ -186,14 +215,14 @@
         <div class="footer">
 
              <!--logo-->
-            <div>
+            <div class="lo">
                 <img src="images/img6.png" alt="logo">
             </div>
 
             <!--contact section-->
             <div class="contact">
-                <div><span>Contact me</span></div>
-                <div class="email">
+                <div class="spann"><span>Contact me</span></div>
+                <div class="email contactflow">
                     <img src="images/img7.gif" alt="email.gif">
                     <div class="address">
                         <strong>Email</strong>
@@ -201,7 +230,7 @@
                     </div>
                     
                 </div>
-                <div class="phone">
+                <div class="phone contactflow">
                     <img src="images/img8.gif" alt="phone.gif">
                     <div class="address">
                         <strong>Phone</strong>
@@ -209,7 +238,7 @@
                     </div>
                     
                 </div>
-                <div class="maddress">
+                <div class="addresss contactflow">
                     <img src="images/img9.gif" alt="address.gif">
                     <div class="address">
                         <strong>Address</strong>
@@ -221,24 +250,30 @@
             
             <!--copyright section-->
             <div class="copyrights">
-                <span>My Personal Portfolio Website</span>
+                <div class="per"><span>My Personal Portfolio Website</span></div>
                 <p>Copyright &copy;2024 By <span>Ribka Mengiste</span> | All rights reserved.</p>   
             </div>
             
             <!--social media section-->
-            <div class="socialmedias">
-                <div><p>Social Medias</p></div>
+            <div class="socialmedias" >
+                <div class="spann"><span>Social Medias</span></div>
                 <div id="icons">
-                    <a href="https://www.linkedin.com/in/ribka-mengiste/" target="_blank"><img src="images/img34.jpg" alt="linkedin-logo"></a>
-                    <a href="https://twitter.com/RMengiste210" target="_blank"><img src="images/img35.png" alt="twitter-logo"></a>
-                    <a href="https://github.com/Ribka12" target="_blank"><img src="images/img36.png" alt="github-logo"></a>
-                    <a href="https://www.snapchat.com/add/ggt6359" target="_blank"><img src="images/img37.jpg" alt="snapchat-logo"></a>
+                    <div class="flexx onef">
+                        <a href="https://www.linkedin.com/in/ribka-mengiste/" target="_blank"><img src="images/img34.jpg" alt="linkedin-logo"></a>
+                        <a href="https://twitter.com/RMengiste210" target="_blank"><img src="images/img35.png" alt="twitter-logo"></a>
+                    </div>
+                    <div class="flexx twof">
+                        <a href="https://github.com/Ribka12" target="_blank"><img src="images/img36.png" alt="github-logo"></a>
+                        <a href="https://www.snapchat.com/add/ggt6359" target="_blank"><img src="images/img37.jpg" alt="snapchat-logo"></a>
+                    </div>
+                  
                 </div>
             </div>        
 
         </div>
 
     </footer>
-
+    <script src="js/index.js"></script>
+   
 </body>
 </html>
