@@ -6,22 +6,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="images/img2.png">
     <title>Hobbies/Interests</title>
+    <link rel="stylesheet" href="css/hobbies.css">
 </head>
 <body>
-
     <header>
-        <!--Navigation bar-->
+        <!--Navigation bar and the introduction part-->
         <div id="nav-bar">
              <img src="images/img6.png" alt="logo">
              <nav>
                 <!-- Hamburger Icon -->
-                <div class="hamburger-icon">
+                <div class="hamburger-icon open">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
+                <div class="new">
+                    <div id="homee">Home</div>
+                    <div id="hobbies-interest">Hobbies/Interests</div>
+                    <div id="educations">Education</div>
+                    <div id="skillls">Skills</div>
+                    <div id="acknowledg">Acknowledgment</div>
+                </div>
                 <!-- Navigation Links -->  
-                <ul>
+                <ul class="drop open">
                      <li><a href="index.html">Home</a></li>
                      <li><a href="hobbies.html">Hobbies/Interests</a></li>
                      <li><a href="education.html">Education</a></li>
@@ -30,20 +37,30 @@
                 </ul>
              </nav>
         </div>
+        <div class="dp">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                     <li><a href="hobbies.html">Hobbies/Interests</a></li>
+                     <li><a href="education.html">Education</a></li>
+                     <li><a href="skills.html">Skills</a></li>
+                     <li><a href="acknowledgment.html">Acknowledgment</a></li>
+            </ul>
+        </div>
+       
     </header>
 
 
     <main>
 
         <section id="section0">
-            <h1>Activities I Enjoy the Most in My Free Time</h1>
-            <p>Create|Play|Watch|Taste – Explore the Best of Every World!</p>
-            <img src="images/img10.png" alt="me.img">
+            <div class="section0"><h1>Activities I Enjoy the Most in My Free Time</h1>
+            <p>Create|Play|Watch|Taste – Explore the Best of Every World!</p></div>
+            <div><img src="images/img10.png" alt="me.img"></div>
         </section>
 
         <!--Movie Section-->
         <section id="section1">
-            <img src="images/img11.png" alt="movies-img">
+            <div class="im"><img src="images/img11.png" alt="movies-img"></div>
             <div class="movie">
                 <div class="aside">
                     <h1>Movies</h1>
@@ -66,12 +83,12 @@
                 </div>
                 <p>Whenever I need a mood boost or a respite from the daily grind, I turn to music. You'll rarely find me without my AirPods, whether I'm heading to class, going for a walk, or simply getting my day started. Ethiopian oldies musics  hold a unique place in my heart because they embody an unsaid depth that I can't fully articulate. It's the type of music that transcends time, combining exquisite melodies with moving lyrics. It's not just about listening them ; it's about feeling every note , letting the rhythm guides you . It's a reminder that no matter where life takes me, the rhythm of the past will always guide my heart home.</p>
             </div> 
-            <img src="images/img12.png" alt="musician-img">
+            <div class="im"><img src="images/img12.png" alt="musician-img"></div>
         </section>
 
         <!--Reading Section-->
         <section id="section3">
-            <img src="images/img13.jpg" alt="book-img">
+            <div class="im"><img src="images/img13.jpg" alt="book-img"></div>
             <div class="reading">
                 <div class="aside">
                     <h1>Reading</h1>
@@ -82,7 +99,7 @@
         </section>
 
         <!--Volleyball Section-->
-        <section id="section5">
+        <section id="section4">
             <div class="volleyball">
                 <div class="aside">
                     <h1>Volleyball-Game</h1>
@@ -91,20 +108,22 @@
                 <p>I have a fondness  for vollyball began in high school, and since then, it has been my passion. It goes beyond the game —it’s about  hanging out with friends, feeling the rush of competition, and simply having fun. I've practiced and worked to get better, and I want to keep pushing myself further. It gives me that sense of release, and moment of focus, and I find both mentally and physically fulfilling. Beyond just a sport, it’s a way to connect with other , push myself, and  savour the small things in life. I'm looking  forward to continuing this journey and deepen my passion for the game.
                 </p>
             </div>
-            <img src="images/img14.jpg" alt="volleyball-img">
+            <div class="im"><img src="images/img14.jpg" alt="volleyball-img"></div>
         </section>
 
         <!--Video-Editing Section-->
-        <section id="section6">
-            <div class="video">
-                <video controls>
-                 <source src="videos/video.mp4" type="video/mp4">
-                 Your browser doesnot support the video tag.
-                </video>
-                <i class="fa-solid fa-play"></i>
+        <section id="section5">
+            <div class="video-container">
+                    <video id="myVideo" class="video" >
+                      <source src="videos/video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button" onclick="playVideo()">
+                      <i class="fa-solid fa-play"></i> 
+                    </div>              
             </div>
 
-            <div class="videoeditng">
+            <div class="videoediting">
                 <div class="aside">
                     <h1>Video-Editing</h1>
                     <p>"Innovative Creativity: The Craft of Video Editing"</p>
@@ -122,14 +141,14 @@
         <div class="footer">
 
              <!--logo-->
-            <div>
+            <div class="lo">
                 <img src="images/img6.png" alt="logo">
             </div>
 
             <!--contact section-->
             <div class="contact">
-                <div><span>Contact me</span></div>
-                <div class="email">
+                <div class="spann"><span>Contact me</span></div>
+                <div class="email contactflow">
                     <img src="images/img7.gif" alt="email.gif">
                     <div class="address">
                         <strong>Email</strong>
@@ -137,7 +156,7 @@
                     </div>
                     
                 </div>
-                <div class="phone">
+                <div class="phone contactflow">
                     <img src="images/img8.gif" alt="phone.gif">
                     <div class="address">
                         <strong>Phone</strong>
@@ -145,7 +164,7 @@
                     </div>
                     
                 </div>
-                <div class="maddress">
+                <div class="addresss contactflow">
                     <img src="images/img9.gif" alt="address.gif">
                     <div class="address">
                         <strong>Address</strong>
@@ -157,24 +176,29 @@
             
             <!--copyright section-->
             <div class="copyrights">
-                <span>My Personal Portfolio Website</span>
+                <div class="per"><span>My Personal Portfolio Website</span></div>
                 <p>Copyright &copy;2024 By <span>Ribka Mengiste</span> | All rights reserved.</p>   
             </div>
             
             <!--social media section-->
-            <div class="socialmedias">
-                <div><p>Social Medias</p></div>
+            <div class="socialmedias" >
+                <div class="spann"><span>Social Medias</span></div>
                 <div id="icons">
-                    <a href="https://www.linkedin.com/in/ribka-mengiste/" target="_blank"><img src="images/img34.jpg" alt="linkedin-logo"></a>
-                    <a href="https://twitter.com/RMengiste210" target="_blank"><img src="images/img35.png" alt="twitter-logo"></a>
-                    <a href="https://github.com/Ribka12" target="_blank"><img src="images/img36.png" alt="github-logo"></a>
-                    <a href="https://www.snapchat.com/add/ggt6359" target="_blank"><img src="images/img37.jpg" alt="snapchat-logo"></a>
+                    <div class="flexx onef">
+                        <a href="https://www.linkedin.com/in/ribka-mengiste/" target="_blank"><img src="images/img34.jpg" alt="linkedin-logo"></a>
+                        <a href="https://twitter.com/RMengiste210" target="_blank"><img src="images/img35.png" alt="twitter-logo"></a>
+                    </div>
+                    <div class="flexx twof">
+                        <a href="https://github.com/Ribka12" target="_blank"><img src="images/img36.png" alt="github-logo"></a>
+                        <a href="https://www.snapchat.com/add/ggt6359" target="_blank"><img src="images/img37.jpg" alt="snapchat-logo"></a>
+                    </div>
+                  
                 </div>
             </div>        
 
         </div>
 
     </footer>
-    
+    <script src="js/index.js"></script>
 </body>
 </html>
